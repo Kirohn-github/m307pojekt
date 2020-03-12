@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+}
+
+.welcome {
+    padding-top: 5vh;
+}
+
+.firma {
+    padding-top: 1vh;
+    padding-right: 200vh;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+}
+.left-btn { float: left; width: 250px; }
+.right-btn { float: right; width: 250px; }
+.btn {width: 250px;}
+select {
+    width: 305px;
+}
+input {
+    width: 305px;
+}
+label {
+    width: 150px;
+    display:inline-block;
+    text-align: left;
+}
