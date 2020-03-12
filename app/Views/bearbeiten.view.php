@@ -19,10 +19,10 @@
     <br>
     <br>
     <label for="inputEmail">Email:</label>
-    <input name="inputEmail" type="text" value='<?= $Ausleihe->email ?>'>
+    <input name="inputEmail" type="email" value='<?= $Ausleihe->email ?>'>
     <br><br>
     <label for="inputTelefon">Telefon:</label>
-    <input name="inputTelefon" type="text" value='<?= $Ausleihe->telefon ?>'>
+    <input name="inputTelefon" type="number" value='<?= $Ausleihe->telefon ?>'>
     <br><br>
     <label for="inputAusgeleihtesVideo">Ausgelehnter Film:</label>
     <select name="inputAusgeleihtesVideo">

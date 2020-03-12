@@ -14,21 +14,25 @@
 <form action="createAusleihe" method="post">
     <br>
     <label for="inputName">Name:</label>
-    <input name="inputName" type="text">
+    <input name="inputName" type="text" minlength="3" required>
     <br>
     <br>
     <label for="inputEmail">Email:</label>
-    <input name="inputEmail" type="text">
+    <input name="inputEmail" type="email" minlength="7" required>
     <br><br>
     <label for="inputTelefon">Telefon:</label>
-    <input name="inputTelefon" type="text">
+    <input name="inputTelefon" type="number">
     <br><br>
     <label for="inputMitgliedschaftsStatus">Mitgliedschafts-Status:</label>
-    <input name="inputMitgliedschaftsStatus" type="text">
+    <select name="inputMitgliedschaftsStatus">
+        <option value="Gold">Gold</option>
+        <option value="Silber">Silber</option>
+        <option value="Bronze">Bronze</option>
+        <option value="Kein">Kein</option>
+    </select>
     <br><br>
     <label for="inputAusgeleihtesVideo">Ausgelehnter Film:</label>
     <select name="inputAusgeleihtesVideo">
-        <option value=''></option>
         <?php
             $statement = db()->prepare('SELECT title FROM movies');
             $statement->execute();
