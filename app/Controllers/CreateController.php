@@ -21,10 +21,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         $ausleihe = new Ausleihe(null, $_POST['inputName'], $_POST['inputEmail'], $_POST['inputTelefon'], $datum, $_POST['inputMitgliedschaftsStatus'], $_POST['inputAusgeleihtesVideo'], 0);
         $ausleihe->create();
-
-        header('Location: uebersicht');
     }
 
+    header('Location: uebersicht');
 }
 
 function validate_email($email)
